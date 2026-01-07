@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { technologies } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cpu } from "lucide-react";
-import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 
 export default function Technologies() {
   const { t } = useTranslation();
@@ -57,11 +56,11 @@ export default function Technologies() {
                   </p>
 
                   <div className="pt-4">
-                    <Link href={`/contact?subject=${tech.id}`}>
+                    <a href={`/contact?subject=${tech.id}`}>
                       <Button variant="outline" className="gap-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 dark:hover:bg-emerald-900/20">
                         Learn Technical Specs <ArrowRight className="w-4 h-4" />
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

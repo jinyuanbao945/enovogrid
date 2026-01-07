@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { solutions } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { Link } from "wouter";
 
 export default function Solutions() {
   const { t } = useTranslation();
@@ -11,7 +10,7 @@ export default function Solutions() {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
       {/* Header */}
       <section className="bg-slate-900 text-white py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/hero-main.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/solution-rural.jpg')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900" />
         <div className="container relative z-10 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-6xl mb-6">{t("nav.solutions")}</h1>
@@ -60,11 +59,11 @@ export default function Solutions() {
                     </div>
                   </div>
 
-                  <Link href={`/contact?subject=${solution.id}`}>
+                  <a href={`/contact?subject=${solution.id}`} className="block">
                     <Button className="w-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white hover:bg-emerald-600 hover:text-white transition-colors group-hover:bg-emerald-600 group-hover:text-white">
                       {t("hero.cta")} <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}
