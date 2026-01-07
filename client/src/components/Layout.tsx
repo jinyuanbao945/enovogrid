@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
 import { useTranslation } from "react-i18next";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -60,8 +60,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group">
               <div className="relative w-10 h-10 flex items-center justify-center bg-emerald-600 rounded-xl text-white shadow-lg shadow-emerald-600/20 group-hover:scale-105 transition-transform">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,34 +76,33 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <path d="M2 12h20" />
                   <path d="m4.93 4.93 14.14 14.14" />
                   <path d="m19.07 4.93-14.14 14.14" />
-                </svg>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl leading-none tracking-tight text-slate-900 dark:text-white">
-                  EnovoGrid
-                </span>
-                <span className="text-[10px] font-medium text-emerald-600 tracking-wider uppercase">
-                  Energy Solutions
-                </span>
-              </div>
-            </a>
-          </Link>
+              </svg>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-heading font-bold text-xl leading-none tracking-tight text-slate-900 dark:text-white">
+                EnovoGrid
+              </span>
+              <span className="text-[10px] font-medium text-emerald-600 tracking-wider uppercase">
+                Energy Solutions
+              </span>
+            </div>
+          </a>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className={cn(
-                    "text-sm font-medium transition-colors hover:text-emerald-600",
-                    location === item.href
-                      ? "text-emerald-600 font-semibold"
-                      : "text-slate-600 dark:text-slate-300"
-                  )}
-                >
-                  {item.label}
-                </a>
-              </Link>
+              <a
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-emerald-600",
+                  location === item.href
+                    ? "text-emerald-600 font-semibold"
+                    : "text-slate-600 dark:text-slate-300"
+                )}
+              >
+                {item.label}
+              </a>
             ))}
           </nav>
 
@@ -134,9 +132,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-emerald-600/20 rounded-full px-6">
-              {t("nav.contact")}
-            </Button>
+            <a href="/contact" className="inline-block">
+              <Button className="bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-emerald-600/20 rounded-full px-6">
+                {t("nav.contact")}
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -154,14 +154,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="fixed inset-0 z-40 bg-white dark:bg-slate-950 pt-24 px-6 lg:hidden animate-in slide-in-from-top-10 duration-200">
           <nav className="flex flex-col gap-6 text-lg font-medium">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className="block py-2 border-b border-slate-100 dark:border-slate-800"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              </Link>
+              <a
+                key={item.href}
+                href={item.href}
+                className="block py-2 border-b border-slate-100 dark:border-slate-800"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.label}
+              </a>
             ))}
             <div className="pt-4 flex flex-col gap-4">
               <div className="flex flex-wrap gap-2">
