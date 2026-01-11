@@ -61,31 +61,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-              <div className="relative w-10 h-10 flex items-center justify-center bg-emerald-600 rounded-xl text-white shadow-lg shadow-emerald-600/20 group-hover:scale-105 transition-transform">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-6 h-6"
-                >
-                  <path d="M12 2v20" />
-                  <path d="M2 12h20" />
-                  <path d="m4.93 4.93 14.14 14.14" />
-                  <path d="m19.07 4.93-14.14 14.14" />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-bold text-xl leading-none tracking-tight text-slate-900 dark:text-white">
-                EnovoGrid
-              </span>
-              <span className="text-[10px] font-medium text-emerald-600 tracking-wider uppercase">
-                Energy Solutions
-              </span>
-            </div>
+              <img src="/images/logo.png" alt="EnovoGrid Logo" className="h-12 w-auto group-hover:scale-105 transition-transform" />
           </a>
 
           {/* Desktop Nav */}
