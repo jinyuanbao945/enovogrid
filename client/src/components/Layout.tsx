@@ -61,7 +61,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-              <img src="/images/logo.png" alt="EnovoGrid Logo" className="h-12 w-auto group-hover:scale-105 transition-transform" />
+              <img src="/images/web_logo.png" alt="ENOVO Logo" className="h-14 w-auto group-hover:scale-105 transition-transform" />
           </a>
 
           {/* Desktop Nav */}
