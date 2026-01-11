@@ -20,7 +20,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/hero-main.jpg" 
-            alt="Green Energy Landscape" 
+            alt={t("hero.title")}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent" />
@@ -51,7 +51,7 @@ export default function Home() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="text-xs font-medium text-emerald-400 tracking-wide uppercase">
-                Engineered for Reliability
+                {t("hero.engineered_reliability")}
               </span>
             </div>
 
@@ -87,10 +87,10 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: "Projects Delivered", value: "500+", icon: Globe },
-              { label: "Total Capacity", value: "1.2 GW", icon: Zap },
-              { label: "Uptime Guarantee", value: "99.9%", icon: Activity },
-              { label: "Countries Served", value: "30+", icon: Map },
+              { label: t("hero.projects_delivered"), value: "500+", icon: Globe },
+              { label: t("hero.total_capacity"), value: "1.2 GW", icon: Zap },
+              { label: t("hero.uptime_guarantee"), value: "99.9%", icon: Activity },
+              { label: t("hero.countries_served"), value: "30+", icon: Map },
             ].map((stat, index) => (
               <div key={index} className="flex flex-col items-center text-center space-y-2 p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
                 <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl text-emerald-600 mb-2">
@@ -113,28 +113,28 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="font-heading font-bold text-4xl text-slate-900 dark:text-white">
-                  Engineering the Future of <span className="text-emerald-600">Distributed Energy</span>
+                  {t("hero.engineering_future")} <span className="text-emerald-600">{t("hero.distributed_energy")}</span>
                 </h2>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                  EnovoGrid transforms complex energy systems into standardized, deliverable engineering products. From microgrids to small hydro, we ensure stability, reliability, and cost-effectiveness for every project.
+                  {t("hero.company_desc")}
                 </p>
               </div>
 
               <div className="space-y-6">
                 {[
                   {
-                    title: "Full Lifecycle Delivery",
-                    desc: "From feasibility study to O&M, we handle every step of the project.",
+                    title: t("hero.full_lifecycle"),
+                    desc: t("hero.full_lifecycle_desc"),
                     icon: ShieldCheck
                   },
                   {
-                    title: "System-Level Integration",
-                    desc: "Advanced VSG & EMS control for seamless on/off-grid switching.",
+                    title: t("hero.system_integration"),
+                    desc: t("hero.system_integration_desc"),
                     icon: Cpu
                   },
                   {
-                    title: "Sustainable & Low Carbon",
-                    desc: "Maximizing renewable penetration to reduce LCOE and emissions.",
+                    title: t("hero.sustainable_low_carbon"),
+                    desc: t("hero.sustainable_desc"),
                     icon: Leaf
                   }
                 ].map((item, i) => (
@@ -153,24 +153,24 @@ export default function Home() {
 
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
-                <img src="/images/tech-scada.jpg" alt="SCADA System" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                <img src="/images/tech-scada.jpg" alt={t("hero.scada_system")} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               {/* Floating Card */}
               <div className="absolute -bottom-8 -left-8 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 max-w-xs hidden md:block">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="font-semibold text-sm uppercase tracking-wider text-slate-500">System Status</span>
+                  <span className="font-semibold text-sm uppercase tracking-wider text-slate-500">{t("hero.system_status")}</span>
                 </div>
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
-                    <span className="text-slate-600 dark:text-slate-400">Grid Frequency</span>
+                    <span className="text-slate-600 dark:text-slate-400">{t("hero.grid_frequency")}</span>
                     <span className="font-mono font-bold text-emerald-600">50.02 Hz</span>
                   </div>
                   <div className="w-full bg-slate-100 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
                     <div className="bg-emerald-500 h-full w-[98%]" />
                   </div>
                   <div className="flex justify-between text-sm pt-1">
-                    <span className="text-slate-600 dark:text-slate-400">Battery SOC</span>
+                    <span className="text-slate-600 dark:text-slate-400">{t("hero.battery_soc")}</span>
                     <span className="font-mono font-bold text-emerald-600">87%</span>
                   </div>
                   <div className="w-full bg-slate-100 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">
@@ -187,26 +187,26 @@ export default function Home() {
       <section className="py-24 bg-slate-50 dark:bg-slate-900">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="font-heading font-bold text-4xl text-slate-900 dark:text-white mb-4">Global Energy Solutions</h2>
-            <p className="text-slate-600 dark:text-slate-400 text-lg">Tailored engineering for diverse environments, from remote islands to industrial complexes.</p>
+            <h2 className="font-heading font-bold text-4xl text-slate-900 dark:text-white mb-4">{t("hero.global_solutions")}</h2>
+            <p className="text-slate-600 dark:text-slate-400 text-lg">{t("hero.global_solutions_desc")}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Rural Electrification",
+                title: t("solutions.rural.title"),
                 image: "/images/solution-rural.jpg",
-                desc: "Reliable microgrids for remote communities."
+                desc: t("solutions.rural.desc")
               },
               {
-                title: "Industrial & Mining",
+                title: t("solutions.industrial.title"),
                 image: "/images/solution-industrial.jpg",
-                desc: "High-stability power for critical operations."
+                desc: t("solutions.industrial.desc")
               },
               {
-                title: "Island Resorts",
+                title: t("solutions.island.title"),
                 image: "/images/solution-island.jpg",
-                desc: "Silent, clean energy for premium destinations."
+                desc: t("solutions.island.desc")
               }
             ].map((solution, i) => (
               <div key={i} className="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer">
@@ -223,7 +223,7 @@ export default function Home() {
                     {solution.desc}
                   </p>
                   <span className="inline-flex items-center text-emerald-400 font-medium text-sm group-hover:gap-2 transition-all">
-                    Explore Solution <ArrowRight className="w-4 h-4 ml-1" />
+                    {t("hero.explore_solution")} <ArrowRight className="w-4 h-4 ml-1" />
                   </span>
                 </div>
               </div>
@@ -236,9 +236,9 @@ export default function Home() {
       <section className="py-24 bg-emerald-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')]"></div>
         <div className="container relative z-10 text-center">
-          <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-6">Ready to Power Your Project?</h2>
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-white mb-6">{t("hero.ready_power")}</h2>
           <p className="text-emerald-100 text-xl max-w-2xl mx-auto mb-10">
-            Get a customized engineering proposal for your energy needs. We deliver worldwide.
+            {t("hero.ready_power_desc")}
           </p>
           <Button size="lg" className="bg-white text-emerald-900 hover:bg-emerald-50 rounded-full px-10 h-14 text-lg font-semibold shadow-xl">
             {t("hero.cta")}

@@ -128,7 +128,7 @@ export default function Contact() {
                 </div>
 
                 <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white h-12 text-lg" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send Message"} <Send className="ml-2 w-4 h-4" />
+                  {isSubmitting ? t("contact.sending") : t("contact.send_message")} <Send className="ml-2 w-4 h-4" />
                 </Button>
               </form>
             </div>
