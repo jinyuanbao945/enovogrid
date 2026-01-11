@@ -19,7 +19,7 @@ export default function Contact() {
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1500));
     
-    toast.success("Message sent successfully! We will contact you shortly.");
+    toast.success(t("contact.success_message"));
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
   };
@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="container relative z-10 text-center">
           <h1 className="font-heading font-bold text-4xl md:text-6xl mb-6">{t("nav.contact")}</h1>
           <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
-            Let's discuss your energy project.
+            {t("contact.subtitle")}
           </p>
         </div>
       </section>
@@ -43,9 +43,9 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="space-y-12">
               <div>
-                <h2 className="font-heading font-bold text-3xl text-slate-900 dark:text-white mb-6">Get in Touch</h2>
+                <h2 className="font-heading font-bold text-3xl text-slate-900 dark:text-white mb-6">{t("contact.get_in_touch")}</h2>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                  Our engineering team is ready to help you design the perfect energy solution. Fill out the form or reach us directly.
+                  {t("contact.description")}
                 </p>
               </div>
 
@@ -55,7 +55,7 @@ export default function Contact() {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Email Us</h3>
+                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">{t("contact.email_us")}</h3>
                     <p className="text-slate-600 dark:text-slate-400">info@enovogrid.com</p>
                     <p className="text-slate-600 dark:text-slate-400">sales@enovogrid.com</p>
                   </div>
@@ -66,7 +66,7 @@ export default function Contact() {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Call Us</h3>
+                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">{t("contact.call_us")}</h3>
                     <p className="text-slate-600 dark:text-slate-400">+86 123 4567 8900 (Global HQ)</p>
                     <p className="text-slate-600 dark:text-slate-400">+1 234 567 8900 (Americas)</p>
                   </div>
@@ -77,11 +77,11 @@ export default function Contact() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Visit Us</h3>
+                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">{t("contact.visit_us")}</h3>
                     <p className="text-slate-600 dark:text-slate-400">
-                      123 Green Energy Park<br />
-                      Tech District, Innovation City<br />
-                      China
+                      {t("contact.address_line1")}<br />
+                      {t("contact.address_line2")}<br />
+                      {t("contact.address_country")}
                     </p>
                   </div>
                 </div>
@@ -93,35 +93,35 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">{t("contact.name")}</Label>
                     <Input id="name" placeholder="John Doe" required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email">{t("contact.email")}</Label>
                     <Input id="email" type="email" placeholder="john@company.com" required />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="type">Customer Type</Label>
+                  <Label htmlFor="type">{t("contact.customer_type")}</Label>
                   <Select>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select type" />
+                      <SelectValue placeholder={t("contact.select_type")} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="epc">EPC / Developer</SelectItem>
-                      <SelectItem value="owner">Project Owner</SelectItem>
-                      <SelectItem value="gov">Government / NGO</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
+                      <SelectItem value="epc">{t("contact.type_epc")}</SelectItem>
+                      <SelectItem value="owner">{t("contact.type_owner")}</SelectItem>
+                      <SelectItem value="gov">{t("contact.type_gov")}</SelectItem>
+                      <SelectItem value="other">{t("contact.type_other")}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Project Details</Label>
+                  <Label htmlFor="message">{t("contact.project_details")}</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Tell us about your project location, capacity, and requirements..." 
+                    placeholder={t("contact.project_placeholder")}
                     className="min-h-[150px]"
                     required 
                   />

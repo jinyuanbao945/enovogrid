@@ -73,7 +73,27 @@ const resources = {
       },
       contact: {
         send_message: "Send Message",
-        sending: "Sending..."
+        sending: "Sending...",
+        subtitle: "Let's discuss your energy project.",
+        get_in_touch: "Get in Touch",
+        description: "Our engineering team is ready to help you design the perfect energy solution. Fill out the form or reach us directly.",
+        email_us: "Email Us",
+        call_us: "Call Us",
+        visit_us: "Visit Us",
+        address_line1: "123 Green Energy Park",
+        address_line2: "Tech District, Innovation City",
+        address_country: "China",
+        name: "Name",
+        email: "Email",
+        customer_type: "Customer Type",
+        select_type: "Select type",
+        type_epc: "EPC / Developer",
+        type_owner: "Project Owner",
+        type_gov: "Government / NGO",
+        type_other: "Other",
+        project_details: "Project Details",
+        project_placeholder: "Tell us about your project location, capacity, and requirements...",
+        success_message: "Message sent successfully! We will contact you shortly."
       }
     }
   },
@@ -143,7 +163,27 @@ const resources = {
       },
       contact: {
         send_message: "发送消息",
-        sending: "发送中..."
+        sending: "发送中...",
+        subtitle: "让我们讨论您的能源项目。",
+        get_in_touch: "联系我们",
+        description: "我们的工程团队已准备好帮助您设计完美的能源解决方案。填写表格或直接与我们联系。",
+        email_us: "发送邮件",
+        call_us: "致电我们",
+        visit_us: "访问我们",
+        address_line1: "123 绿色能源园区",
+        address_line2: "科技园区，创新城",
+        address_country: "中国",
+        name: "姓名",
+        email: "邮箱",
+        customer_type: "客户类型",
+        select_type: "选择类型",
+        type_epc: "EPC / 开发商",
+        type_owner: "项目业主",
+        type_gov: "政府 / 非政府组织",
+        type_other: "其他",
+        project_details: "项目详情",
+        project_placeholder: "告诉我们您的项目位置、容量和需求...",
+        success_message: "消息发送成功！我们将很快与您联系。"
       }
     }
   },
@@ -213,7 +253,27 @@ const resources = {
       },
       contact: {
         send_message: "Envoyer le Message",
-        sending: "Envoi en cours..."
+        sending: "Envoi en cours...",
+        subtitle: "Discutons de votre projet energetique.",
+        get_in_touch: "Nous Contacter",
+        description: "Notre equipe d'ingenierie est prete a vous aider a concevoir la solution energetique parfaite.",
+        email_us: "Nous Envoyer un Email",
+        call_us: "Nous Appeler",
+        visit_us: "Nous Visiter",
+        address_line1: "123 Parc de l'Energie Verte",
+        address_line2: "District Technologique, Ville de l'Innovation",
+        address_country: "Chine",
+        name: "Nom",
+        email: "Email",
+        customer_type: "Type de Client",
+        select_type: "Selectionner le type",
+        type_epc: "EPC / Developpeur",
+        type_owner: "Proprietaire du Projet",
+        type_gov: "Gouvernement / ONG",
+        type_other: "Autre",
+        project_details: "Details du Projet",
+        project_placeholder: "Parlez-nous de votre projet...",
+        success_message: "Message envoye avec succes!"
       }
     }
   },
@@ -283,7 +343,27 @@ const resources = {
       },
       contact: {
         send_message: "Enviar Mensaje",
-        sending: "Enviando..."
+        sending: "Enviando...",
+        subtitle: "Hablemos sobre su proyecto energetico.",
+        get_in_touch: "Contactenos",
+        description: "Nuestro equipo de ingenieria esta listo para ayudarle.",
+        email_us: "Envienos un Email",
+        call_us: "Llamenos",
+        visit_us: "Visitenos",
+        address_line1: "123 Parque de Energia Verde",
+        address_line2: "Distrito Tecnologico, Ciudad de Innovacion",
+        address_country: "China",
+        name: "Nombre",
+        email: "Correo Electronico",
+        customer_type: "Tipo de Cliente",
+        select_type: "Seleccione tipo",
+        type_epc: "EPC / Desarrollador",
+        type_owner: "Propietario del Proyecto",
+        type_gov: "Gobierno / ONG",
+        type_other: "Otro",
+        project_details: "Detalles del Proyecto",
+        project_placeholder: "Cuantenos sobre su proyecto...",
+        success_message: "Mensaje enviado con exito!"
       }
     }
   },
@@ -353,7 +433,27 @@ const resources = {
       },
       contact: {
         send_message: "Kirim Pesan",
-        sending: "Mengirim..."
+        sending: "Mengirim...",
+        subtitle: "Mari kita diskusikan proyek energi Anda.",
+        get_in_touch: "Hubungi Kami",
+        description: "Tim teknik kami siap membantu Anda merancang solusi energi.",
+        email_us: "Kirim Email",
+        call_us: "Hubungi Kami",
+        visit_us: "Kunjungi Kami",
+        address_line1: "123 Taman Energi Hijau",
+        address_line2: "Distrik Teknologi, Kota Inovasi",
+        address_country: "China",
+        name: "Nama",
+        email: "Email",
+        customer_type: "Jenis Pelanggan",
+        select_type: "Pilih jenis",
+        type_epc: "EPC / Pengembang",
+        type_owner: "Pemilik Proyek",
+        type_gov: "Pemerintah / LSM",
+        type_other: "Lainnya",
+        project_details: "Detail Proyek",
+        project_placeholder: "Ceritakan tentang proyek Anda...",
+        success_message: "Pesan terkirim dengan sukses!"
       }
     }
   },
@@ -422,7 +522,27 @@ const resources = {
       },
       contact: {
         send_message: "Hantar Mesej",
-        sending: "Menghantar..."
+        sending: "Menghantar...",
+        subtitle: "Mari kita bincang projek tenaga Anda.",
+        get_in_touch: "Hubungi Kami",
+        description: "Pasukan kejuruteraan kami bersedia membantu Anda.",
+        email_us: "Hantar Email",
+        call_us: "Hubungi Kami",
+        visit_us: "Lawati Kami",
+        address_line1: "123 Taman Tenaga Hijau",
+        address_line2: "Daerah Teknologi, Bandar Inovasi",
+        address_country: "China",
+        name: "Nama",
+        email: "Email",
+        customer_type: "Jenis Pelanggan",
+        select_type: "Pilih jenis",
+        type_epc: "EPC / Pemaju",
+        type_owner: "Pemilik Projek",
+        type_gov: "Kerajaan / NGO",
+        type_other: "Lain-lain",
+        project_details: "Butiran Projek",
+        project_placeholder: "Beritahu kami tentang projek Anda...",
+        success_message: "Mesej dihantar dengan berjaya!"
       }
     }
   }
