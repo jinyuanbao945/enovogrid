@@ -56,8 +56,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 dark:text-white mb-1">{t("contact.email_us")}</h3>
-                    <p className="text-slate-600 dark:text-slate-400">info@enovogrid.com</p>
-                    <p className="text-slate-600 dark:text-slate-400">sales@enovogrid.com</p>
+                    <p className="text-slate-600 dark:text-slate-400">auto@enovogrid.com</p>
+
                   </div>
                 </div>
 

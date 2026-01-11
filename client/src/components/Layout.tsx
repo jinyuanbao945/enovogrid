@@ -221,7 +221,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <h4 className="font-heading font-semibold text-white mb-4">{t("nav.contact")}</h4>
             <ul className="space-y-2 text-sm">
-              <li>info@enovogrid.com</li>
+              <li>auto@enovogrid.com</li>
               <li>+86 123 4567 8900</li>
               <li>123 Green Energy Park, Tech District</li>
             </ul>
